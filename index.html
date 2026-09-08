@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fontanero Mataró Expertos | Instaladores autorizados | 936 941 829</title>
+<meta name="description" content="Fontaneros expertos en Mataró. Instaladores autorizados, informe técnico y garantía por escrito en cada intervención. Llame al 936 941 829 o escríbanos por WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --pine:#0E241C;
+    --pine-2:#143026;
+    --pine-3:#1B3F31;
+    --paper:#F5F3EC;
+    --paper-2:#EBE7DC;
+    --brass:#C89A4A;
+    --brass-light:#E2C285;
+    --verdigris:#5FA88A;
+    --ink:#131A17;
+    --text:#4E5A54;
+    --text-light:rgba(245,243,236,0.66);
+    --text-lighter:rgba(245,243,236,0.42);
+    --hair:rgba(245,243,236,0.14);
+    --hair-soft:rgba(245,243,236,0.07);
+    --hair-dk:rgba(19,26,23,0.14);
+    --serif:'IBM Plex Serif', Georgia, serif;
+    --sans:'IBM Plex Sans', Helvetica, sans-serif;
+    --mono:'IBM Plex Mono', monospace;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:var(--sans); background:var(--paper); color:var(--text);
+    font-size:16.5px; line-height:1.7; font-weight:400;
+    -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+  }
+  a{color:inherit; text-decoration:none;}
+  svg{display:block;}
+  .wrap{max-width:1180px; margin:0 auto; padding:0 34px; position:relative; z-index:1;}
+  :focus-visible{outline:2px solid var(--brass); outline-offset:4px;}
+  @media (prefers-reduced-motion: reduce){ *{transition:none !important; animation:none !important;} }
+  .reveal{opacity:0; transform:translateY(18px); transition:opacity .9s cubic-bezier(.2,.7,.3,1), transform .9s cubic-bezier(.2,.7,.3,1);}
+  .reveal.in-view{opacity:1; transform:none;}
+
+  /* labels */
+  .label{
+    font-family:var(--mono); font-size:11.5px; font-weight:500;
+    letter-spacing:0.14em; text-transform:uppercase; color:var(--brass);
+    display:inline-flex; align-items:center; gap:12px; margin-bottom:22px;
+  }
+  .label::before{content:""; width:26px; height:1px; background:var(--brass); opacity:0.8;}
+  .label.dk{color:var(--pine-3);} .label.dk::before{background:var(--pine-3);}
+
+  /* ── topbar ── */
+  .topbar{ position:sticky; top:0; z-index:100; background:rgba(14,36,28,0.94); backdrop-filter:blur(12px); border-bottom:1px solid var(--hair-soft);}
+  .topbar .wrap{display:flex; align-items:center; justify-content:space-between; padding:14px 34px; gap:18px;}
+  .brand{display:flex; align-items:center; gap:13px; color:var(--paper); font-family:var(--serif); font-size:17.5px; font-weight:500; letter-spacing:-0.005em;}
+  .brand .mk{width:32px; height:32px; flex:none; color:var(--brass);}
+  .brand em{font-style:italic; font-weight:400; color:var(--brass-light);}
+  .tb-actions{display:flex; align-items:center; gap:11px;}
+  .tb-wa{ width:42px; height:42px; display:flex; align-items:center; justify-content:center; border:1px solid var(--hair); color:var(--brass-light); transition:.3s; flex:none;}
+  .tb-wa:hover{background:var(--brass-light); color:var(--pine); border-color:var(--brass-light);}
+  .tb-wa svg{width:19px; height:19px;}
+  .tb-call{
+    display:flex; align-items:center; gap:10px; border:1px solid var(--brass); color:var(--brass-light);
+    padding:11px 21px; font-family:var(--mono); font-size:14.5px; font-weight:500; letter-spacing:0.02em;
+    white-space:nowrap; transition:.35s;
+  }
+  .tb-call:hover{background:var(--brass-light); color:var(--pine); border-color:var(--brass-light);}
+  .tb-call svg{width:16px; height:16px; flex:none;}
+
+  /* ── hero ── */
+  .hero{
+    background:
+      radial-gradient(ellipse 900px 560px at 76% 4%, rgba(95,168,138,0.13), transparent 66%),
+      radial-gradient(ellipse 620px 460px at 4% 96%, rgba(200,154,74,0.10), transparent 70%),
+      var(--pine);
+    color:var(--paper); padding:96px 0 0; position:relative; overflow:hidden;
+  }
+  .hero .wrap{display:grid; grid-template-columns:1.02fr 0.98fr; gap:64px; align-items:center;}
+  .hero h1{
+    font-family:var(--serif); font-weight:300; color:var(--paper);
+    font-size:clamp(40px, 5.4vw, 66px); line-height:1.06; letter-spacing:-0.025em;
+  }
+  .hero h1 em{font-style:italic; font-weight:400; color:var(--brass-light);}
+  .hero .lead{margin-top:28px; font-size:17.5px; color:var(--text-light); max-width:47ch; line-height:1.75;}
+  .hero-actions{margin-top:44px; display:flex; flex-wrap:wrap; align-items:center; gap:26px 34px;}
+  .btn-call{
+    display:inline-flex; align-items:center; gap:19px;
+    background:linear-gradient(150deg, var(--brass-light) 0%, var(--brass) 60%, #A87C33 100%);
+    color:var(--pine); padding:19px 32px;
+    box-shadow:0 22px 48px -20px rgba(200,154,74,0.55), inset 0 1px 0 rgba(255,255,255,0.3);
+    transition:transform .35s cubic-bezier(.2,.8,.3,1), box-shadow .35s;
+  }
+  .btn-call:hover{transform:translateY(-3px); box-shadow:0 30px 58px -20px rgba(200,154,74,0.66), inset 0 1px 0 rgba(255,255,255,0.3);}
+  .btn-call svg{width:25px; height:25px; flex:none; opacity:0.82;}
+  .btn-call .cap{display:block; font-family:var(--mono); font-size:11px; letter-spacing:0.13em; text-transform:uppercase; font-weight:600; opacity:0.72;}
+  .btn-call .num{font-family:var(--serif); font-weight:500; font-size:26px; line-height:1.16; letter-spacing:-0.01em;}
+  .wa-link{display:inline-flex; align-items:center; gap:10px; font-size:14.5px; color:var(--text-light); border-bottom:1px solid var(--hair); padding-bottom:4px; transition:.3s;}
+  .wa-link:hover{color:var(--paper); border-color:var(--brass);}
+  .wa-link svg{width:17px; height:17px; color:var(--brass-light); flex:none;}
+
+  /* ── SIGNATURE: technical drawing ── */
+  .plan{ border:1px solid var(--hair); background:rgba(20,48,38,0.55); position:relative;}
+  .plan .sheet{ padding:26px 26px 0; }
+  .plan svg.draw{width:100%; height:auto;}
+  .plan .titleblock{ display:grid; grid-template-columns:repeat(4,1fr); border-top:1px solid var(--hair); margin-top:10px;}
+  .plan .tb-cell{ padding:13px 14px; border-right:1px solid var(--hair-soft);}
+  .plan .tb-cell:last-child{border-right:none;}
+  .plan .tb-k{font-family:var(--mono); font-size:9.5px; letter-spacing:0.12em; text-transform:uppercase; color:var(--text-lighter);}
+  .plan .tb-v{font-family:var(--mono); font-size:12.5px; color:var(--brass-light); margin-top:3px; font-weight:500;}
+  .plan-cap{margin-top:16px; font-family:var(--mono); font-size:11.5px; color:var(--text-lighter); letter-spacing:0.06em; text-align:center;}
+
+  /* ── credentials strip ── */
+  .creds{background:var(--pine-2); border-top:1px solid var(--hair-soft); margin-top:88px;}
+  .creds .wrap{display:grid; grid-template-columns:repeat(4,1fr); padding:0 34px;}
+  .cred{padding:30px 24px 30px 0; margin-right:24px; border-right:1px solid var(--hair-soft); display:flex; gap:14px; align-items:flex-start;}
+  .cred:last-child{border-right:none; margin-right:0;}
+  .cred svg{width:20px; height:20px; color:var(--brass); flex:none; margin-top:4px;}
+  .cred b{display:block; font-family:var(--serif); font-size:15.5px; font-weight:500; color:var(--paper);}
+  .cred span{font-size:13.5px; color:var(--text-light); line-height:1.5;}
+
+  /* ── sections ── */
+  section{padding:120px 0;}
+  .head{max-width:660px; margin-bottom:64px;}
+  h2{font-family:var(--serif); font-weight:300; color:var(--ink); font-size:clamp(30px,4.2vw,46px); line-height:1.1; letter-spacing:-0.025em;}
+  h2 em{font-style:italic; font-weight:400; color:var(--pine-3);}
+  .head p{margin-top:20px; font-size:17px; color:var(--text); max-width:54ch;}
+
+  /* protocol */
+  .protocol{display:grid; grid-template-columns:repeat(2,1fr); gap:1px; background:var(--hair-dk); border:1px solid var(--hair-dk);}
+  .pstep{background:var(--paper); padding:38px 34px; position:relative; transition:background .4s;}
+  .pstep:hover{background:#FBFAF6;}
+  .pstep .no{font-family:var(--mono); font-size:12px; font-weight:600; letter-spacing:0.14em; color:var(--brass); display:block; margin-bottom:18px;}
+  .pstep h3{font-family:var(--serif); font-size:21px; font-weight:500; color:var(--ink); margin-bottom:10px; letter-spacing:-0.01em;}
+  .pstep p{font-size:15px; line-height:1.7;}
+
+  /* deliverables */
+  .deliver{background:var(--pine); color:var(--paper);}
+  .deliver h2{color:var(--paper);} .deliver h2 em{color:var(--brass-light);}
+  .deliver .head p{color:var(--text-light);}
+  .docs{display:grid; grid-template-columns:repeat(3,1fr); gap:22px;}
+  .doc{
+    border:1px solid var(--hair); background:linear-gradient(168deg, var(--pine-2), rgba(20,48,38,0.35));
+    padding:36px 30px 32px; transition:transform .45s cubic-bezier(.2,.8,.3,1), border-color .45s;
+  }
+  .doc:hover{transform:translateY(-4px); border-color:rgba(226,194,133,0.36);}
+  .doc .ic{width:44px; height:44px; border:1px solid var(--hair); display:flex; align-items:center; justify-content:center; margin-bottom:22px; color:var(--brass-light);}
+  .doc .ic svg{width:21px; height:21px;}
+  .doc h3{font-family:var(--serif); font-size:20px; font-weight:500; color:var(--paper); margin-bottom:10px;}
+  .doc p{font-size:14.5px; color:var(--text-light); line-height:1.7;}
+
+  /* rates */
+  .rates{border:1px solid var(--hair-dk); background:#FBFAF6;}
+  .rate{display:flex; justify-content:space-between; align-items:center; gap:20px; padding:24px 32px; border-bottom:1px solid var(--hair-dk);}
+  .rate:last-of-type{border-bottom:none;}
+  .rate .job{font-family:var(--serif); font-size:18px; font-weight:500; color:var(--ink); letter-spacing:-0.01em;}
+  .rate .det{font-size:14px; margin-top:2px;}
+  .rate .fee{font-family:var(--mono); font-size:17px; font-weight:600; color:var(--pine-3); white-space:nowrap;}
+  .rates-note{background:var(--pine); color:var(--text-light); padding:22px 32px; font-size:14.5px; display:flex; gap:13px; align-items:flex-start;}
+  .rates-note svg{width:19px; height:19px; color:var(--brass); flex:none; margin-top:3px;}
+  .rates-note b{color:var(--paper); font-weight:500;}
+
+  /* band */
+  .band{background:var(--pine-2); border-top:1px solid var(--hair-soft); border-bottom:1px solid var(--hair-soft); padding:82px 0;}
+  .band .wrap{display:flex; justify-content:space-between; align-items:center; gap:42px; flex-wrap:wrap;}
+  .band h3{font-family:var(--serif); font-weight:300; color:var(--paper); font-size:clamp(26px,3.4vw,40px); line-height:1.14; max-width:17ch; letter-spacing:-0.022em;}
+  .band h3 em{font-style:italic; color:var(--brass-light);}
+  .band p{color:var(--text-light); margin-top:14px; font-size:15.5px; max-width:38ch;}
+
+  /* zones */
+  .zones{display:flex; flex-wrap:wrap; gap:11px;}
+  .zone{font-family:var(--mono); font-size:13px; color:var(--ink); border:1px solid var(--hair-dk); background:#FBFAF6; padding:10px 17px; letter-spacing:0.02em;}
+
+  /* faq */
+  .qa{border-bottom:1px solid var(--hair-dk);}
+  .qa:first-of-type{border-top:1px solid var(--hair-dk);}
+  .qa summary{
+    list-style:none; cursor:pointer; display:flex; justify-content:space-between; align-items:center; gap:26px;
+    padding:26px 0; font-family:var(--serif); font-size:19.5px; font-weight:500; color:var(--ink);
+    letter-spacing:-0.012em; transition:color .3s;
+  }
+  .qa summary:hover, details[open] summary{color:var(--pine-3);}
+  .qa summary::-webkit-details-marker{display:none;}
+  .mk{position:relative; width:15px; height:15px; flex:none; color:var(--brass);}
+  .mk::before,.mk::after{content:""; position:absolute; background:currentColor; top:50%; left:50%; transform:translate(-50%,-50%);}
+  .mk::before{width:15px; height:1.5px;}
+  .mk::after{width:1.5px; height:15px; transition:transform .35s cubic-bezier(.2,.8,.3,1), opacity .3s;}
+  details[open] .mk::after{transform:translate(-50%,-50%) rotate(90deg); opacity:0;}
+  .qa p{font-size:15.5px; max-width:66ch; padding-bottom:28px;}
+
+  /* footer */
+  footer{background:var(--pine); color:var(--text-light); padding:60px 0 40px;}
+  .foot{display:flex; justify-content:space-between; gap:34px; flex-wrap:wrap; align-items:flex-start;}
+  footer h4{font-family:var(--mono); font-size:11.5px; letter-spacing:0.14em; text-transform:uppercase; color:var(--brass); margin-bottom:14px; font-weight:500;}
+  footer p, footer a{font-size:14.5px; color:var(--text-light);}
+  footer a:hover{color:var(--paper);}
+  .fine{margin-top:46px; padding-top:22px; border-top:1px solid var(--hair-soft); font-family:var(--mono); font-size:11.5px; color:var(--text-lighter); letter-spacing:0.05em;}
+
+  /* sticky */
+  .sticky{display:none;}
+  @media (max-width:980px){
+    .hero .wrap{grid-template-columns:1fr; gap:52px;}
+    .creds .wrap{grid-template-columns:1fr 1fr;}
+    .cred:nth-child(2n){border-right:none; margin-right:0;}
+    .cred:nth-child(-n+2){border-bottom:1px solid var(--hair-soft);}
+    .docs{grid-template-columns:1fr;}
+    .band .wrap{flex-direction:column; align-items:flex-start;}
+  }
+  @media (max-width:700px){
+    .wrap{padding:0 22px;}
+    .hero{padding-top:64px;}
+    section{padding:78px 0;}
+    .protocol{grid-template-columns:1fr;}
+    .creds .wrap{grid-template-columns:1fr; padding:0 22px;}
+    .cred{border-right:none; margin-right:0; border-bottom:1px solid var(--hair-soft); padding:22px 0;}
+    .cred:last-child{border-bottom:none;}
+    .plan .titleblock{grid-template-columns:1fr 1fr;}
+    .plan .tb-cell:nth-child(2){border-right:none;}
+    .plan .tb-cell:nth-child(-n+2){border-bottom:1px solid var(--hair-soft);}
+    .rate{flex-direction:column; align-items:flex-start; gap:8px;}
+    .tb-call .n{display:none;}
+    body{padding-bottom:66px;}
+    .sticky{display:flex; position:fixed; left:0; right:0; bottom:0; z-index:99; box-shadow:0 -10px 30px rgba(0,0,0,0.35);}
+    .sticky a{flex:1; display:flex; align-items:center; justify-content:center; gap:10px; padding:17px 8px; font-weight:600; font-size:15.5px;}
+    .sticky .s-call{background:linear-gradient(150deg, var(--brass-light), var(--brass) 60%, #A87C33); color:var(--pine);}
+    .sticky .s-wa{width:66px; flex:none; background:var(--pine-3); color:var(--brass-light); border-left:1px solid var(--hair);}
+    .sticky svg{width:19px; height:19px; flex:none;}
+  }
+</style>
+</head>
+<body>
+
+<!-- ══ TOPBAR ══ -->
+<div class="topbar">
+  <div class="wrap">
+    <div class="brand">
+      <svg class="mk" viewBox="0 0 40 40" aria-hidden="true">
+        <circle cx="20" cy="20" r="18.5" fill="none" stroke="currentColor" stroke-width="1"/>
+        <g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+          <path d="M20 8c4.6 5.6 7.6 9.6 7.6 13.2a7.6 7.6 0 0 1-15.2 0C12.4 17.6 15.4 13.6 20 8z"/>
+        </g>
+      </svg>
+      Fontanero <em>Mataró</em>
+    </div>
+    <div class="tb-actions">
+      <a class="tb-wa" href="https://wa.me/34644415819" target="_blank" rel="noopener" aria-label="WhatsApp">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.28-1.38a9.9 9.9 0 0 0 4.76 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.13-2.9-7C17.18 3.03 14.7 2 12.04 2zm5.8 14.1c-.24.68-1.4 1.3-1.93 1.38-.5.08-1.12.11-1.8-.11a17.2 17.2 0 0 1-1.7-.63c-3-1.3-4.95-4.32-5.1-4.52-.15-.2-1.22-1.62-1.22-3.1 0-1.47.77-2.19 1.05-2.49.27-.3.6-.37.8-.37h.57c.18 0 .43-.07.67.51.24.6.83 2.06.9 2.21.07.15.12.32.02.52-.1.2-.15.32-.3.5-.15.17-.31.39-.44.52-.15.15-.3.31-.13.6.17.3.77 1.27 1.65 2.05 1.14 1.02 2.1 1.33 2.4 1.48.3.15.47.13.65-.08.17-.2.75-.87.95-1.17.2-.3.4-.24.66-.15.27.1 1.72.81 2.02.96.3.15.5.22.57.35.07.13.07.75-.17 1.44z"/></svg>
+      </a>
+      <a class="tb-call" href="tel:+34936941829">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <span class="n">936 941 829</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ══ HERO ══ -->
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <span class="label">Instaladores autorizados · Mataró</span>
+      <h1>Cada avería empieza con un <em>diagnóstico</em>, no con un martillo</h1>
+      <p class="lead">Localizamos el origen real del problema antes de tocar nada, se lo explicamos con el plano de la instalación delante y le entregamos informe, factura y garantía por escrito.</p>
+      <div class="hero-actions">
+        <a class="btn-call" href="tel:+34936941829">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span>
+            <span class="cap">Diagnóstico sin compromiso</span>
+            <span class="num">936 941 829</span>
+          </span>
+        </a>
+        <a class="wa-link" href="https://wa.me/34644415819" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.28-1.38a9.9 9.9 0 0 0 4.76 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.13-2.9-7C17.18 3.03 14.7 2 12.04 2zm5.8 14.1c-.24.68-1.4 1.3-1.93 1.38-.5.08-1.12.11-1.8-.11a17.2 17.2 0 0 1-1.7-.63c-3-1.3-4.95-4.32-5.1-4.52-.15-.2-1.22-1.62-1.22-3.1 0-1.47.77-2.19 1.05-2.49.27-.3.6-.37.8-.37h.57c.18 0 .43-.07.67.51.24.6.83 2.06.9 2.21.07.15.12.32.02.52-.1.2-.15.32-.3.5-.15.17-.31.39-.44.52-.15.15-.3.31-.13.6.17.3.77 1.27 1.65 2.05 1.14 1.02 2.1 1.33 2.4 1.48.3.15.47.13.65-.08.17-.2.75-.87.95-1.17.2-.3.4-.24.66-.15.27.1 1.72.81 2.02.96.3.15.5.22.57.35.07.13.07.75-.17 1.44z"/></svg>
+          Envíenos una foto por WhatsApp
+        </a>
+      </div>
+    </div>
+
+    <!-- SIGNATURE: plano técnico -->
+    <div>
+      <div class="plan">
+        <div class="sheet">
+          <svg class="draw" viewBox="0 0 420 340" role="img" aria-label="Plano técnico de una instalación de fontanería con acotaciones">
+            <defs>
+              <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+                <path d="M20 0 L0 0 0 20" fill="none" stroke="rgba(245,243,236,0.055)" stroke-width="1"/>
+              </pattern>
+              <marker id="ar" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+                <path d="M0 1.5 L8 4.5 L0 7.5 z" fill="#E2C285"/>
+              </marker>
+              <marker id="ar2" markerWidth="9" markerHeight="9" refX="1" refY="4.5" orient="auto">
+                <path d="M9 1.5 L1 4.5 L9 7.5 z" fill="#E2C285"/>
+              </marker>
+            </defs>
+            <rect width="420" height="340" fill="url(#grid)"/>
+
+            <!-- muro / sección -->
+            <g stroke="rgba(245,243,236,0.28)" stroke-width="1" fill="none">
+              <line x1="56" y1="24" x2="56" y2="316"/>
+              <line x1="46" y1="24" x2="46" y2="316"/>
+              <g stroke-width="0.7" opacity="0.55">
+                <line x1="46" y1="34" x2="56" y2="24"/><line x1="46" y1="60" x2="56" y2="50"/>
+                <line x1="46" y1="86" x2="56" y2="76"/><line x1="46" y1="112" x2="56" y2="102"/>
+                <line x1="46" y1="138" x2="56" y2="128"/><line x1="46" y1="164" x2="56" y2="154"/>
+                <line x1="46" y1="190" x2="56" y2="180"/><line x1="46" y1="216" x2="56" y2="206"/>
+                <line x1="46" y1="242" x2="56" y2="232"/><line x1="46" y1="268" x2="56" y2="258"/>
+                <line x1="46" y1="294" x2="56" y2="284"/><line x1="46" y1="316" x2="56" y2="306"/>
+              </g>
+            </g>
+
+            <!-- tubería principal vertical -->
+            <g stroke="#F5F3EC" stroke-width="1.6" fill="none" stroke-linecap="round" opacity="0.9">
+              <line x1="140" y1="30" x2="140" y2="120"/>
+              <line x1="164" y1="30" x2="164" y2="120"/>
+              <!-- codo -->
+              <path d="M140 120 Q140 148 168 148"/>
+              <path d="M164 120 Q164 124 172 124"/>
+              <!-- tramo horizontal -->
+              <line x1="172" y1="124" x2="300" y2="124"/>
+              <line x1="168" y1="148" x2="300" y2="148"/>
+            </g>
+
+            <!-- bridas -->
+            <g stroke="#E2C285" stroke-width="1.4">
+              <line x1="132" y1="46" x2="172" y2="46"/>
+              <line x1="132" y1="52" x2="172" y2="52"/>
+            </g>
+
+            <!-- válvula de paso -->
+            <g transform="translate(226,136)">
+              <path d="M-18 -14 L-18 14 L0 0 z" fill="none" stroke="#E2C285" stroke-width="1.5"/>
+              <path d="M18 -14 L18 14 L0 0 z" fill="none" stroke="#E2C285" stroke-width="1.5"/>
+              <line x1="0" y1="0" x2="0" y2="-30" stroke="#E2C285" stroke-width="1.5"/>
+              <line x1="-13" y1="-30" x2="13" y2="-30" stroke="#E2C285" stroke-width="2.4" stroke-linecap="round"/>
+            </g>
+
+            <!-- manómetro -->
+            <g transform="translate(330,136)">
+              <line x1="-30" y1="0" x2="-12" y2="0" stroke="#F5F3EC" stroke-width="1.6" opacity="0.9"/>
+              <circle cx="6" cy="0" r="19" fill="none" stroke="#5FA88A" stroke-width="1.5"/>
+              <circle cx="6" cy="0" r="14" fill="none" stroke="rgba(95,168,138,0.4)" stroke-width="0.8"/>
+              <line x1="6" y1="0" x2="15" y2="-11" stroke="#5FA88A" stroke-width="1.6" stroke-linecap="round"/>
+              <circle cx="6" cy="0" r="2" fill="#5FA88A"/>
+            </g>
+
+            <!-- punto de fuga -->
+            <g transform="translate(196,124)">
+              <circle r="9" fill="none" stroke="#E2C285" stroke-width="1.2" opacity="0.75"/>
+              <circle r="3.2" fill="#E2C285"/>
+            </g>
+
+            <!-- acotación vertical -->
+            <g>
+              <line x1="104" y1="30" x2="104" y2="120" stroke="#E2C285" stroke-width="1" marker-start="url(#ar2)" marker-end="url(#ar)"/>
+              <line x1="98" y1="30" x2="136" y2="30" stroke="rgba(226,194,133,0.45)" stroke-width="0.8"/>
+              <line x1="98" y1="120" x2="136" y2="120" stroke="rgba(226,194,133,0.45)" stroke-width="0.8"/>
+              <text x="96" y="79" text-anchor="end" fill="#E2C285" font-family="IBM Plex Mono, monospace" font-size="11">1.240</text>
+            </g>
+
+            <!-- acotación horizontal -->
+            <g>
+              <line x1="172" y1="196" x2="300" y2="196" stroke="#E2C285" stroke-width="1" marker-start="url(#ar2)" marker-end="url(#ar)"/>
+              <line x1="172" y1="156" x2="172" y2="202" stroke="rgba(226,194,133,0.45)" stroke-width="0.8"/>
+              <line x1="300" y1="156" x2="300" y2="202" stroke="rgba(226,194,133,0.45)" stroke-width="0.8"/>
+              <text x="236" y="214" text-anchor="middle" fill="#E2C285" font-family="IBM Plex Mono, monospace" font-size="11">Ø 22 mm</text>
+            </g>
+
+            <!-- leader: punto de fuga -->
+            <g>
+              <path d="M196 116 L214 78 L296 78" fill="none" stroke="rgba(245,243,236,0.5)" stroke-width="0.9"/>
+              <circle cx="196" cy="116" r="2" fill="#F5F3EC"/>
+              <text x="300" y="75" fill="#F5F3EC" font-family="IBM Plex Mono, monospace" font-size="11" opacity="0.92">Fuga localizada</text>
+              <text x="300" y="90" fill="rgba(245,243,236,0.5)" font-family="IBM Plex Mono, monospace" font-size="10">Sin picar pared</text>
+            </g>
+
+            <!-- leader: válvula -->
+            <g>
+              <path d="M226 106 L226 268 L120 268" fill="none" stroke="rgba(245,243,236,0.35)" stroke-width="0.9" stroke-dasharray="4 4"/>
+              <text x="116" y="265" text-anchor="end" fill="rgba(245,243,236,0.8)" font-family="IBM Plex Mono, monospace" font-size="11">Llave de paso</text>
+            </g>
+
+            <!-- leader: manómetro -->
+            <g>
+              <path d="M336 155 L336 300 L206 300" fill="none" stroke="rgba(95,168,138,0.4)" stroke-width="0.9"/>
+              <text x="202" y="297" text-anchor="end" fill="#5FA88A" font-family="IBM Plex Mono, monospace" font-size="11">Prueba de presión ✓</text>
+            </g>
+          </svg>
+        </div>
+        <div class="titleblock">
+          <div class="tb-cell"><div class="tb-k">Expediente</div><div class="tb-v">MT-2416</div></div>
+          <div class="tb-cell"><div class="tb-k">Escala</div><div class="tb-v">1:20</div></div>
+          <div class="tb-cell"><div class="tb-k">Técnico</div><div class="tb-v">Nº 08-4417</div></div>
+          <div class="tb-cell"><div class="tb-k">Estado</div><div class="tb-v">Verificado</div></div>
+        </div>
+      </div>
+      <p class="plan-cap">Croquis de intervención — se adjunta al informe de cada trabajo</p>
+    </div>
+  </div>
+
+  <!-- credenciales -->
+  <div class="creds">
+    <div class="wrap">
+      <div class="cred">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2l8 4v6c0 5-3.5 9-8 10-4.5-1-8-5-8-10V6z"/></svg>
+        <span><b>Instalador autorizado</b>Carnet profesional en vigor</span>
+      </div>
+      <div class="cred">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="4" y="4" width="16" height="16" rx="1"/><path d="M8 10h8M8 14h5"/></svg>
+        <span><b>Informe técnico</b>Con croquis y fotografías</span>
+      </div>
+      <div class="cred">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20 6L9 17l-5-5"/></svg>
+        <span><b>Garantía por escrito</b>Materiales y mano de obra</span>
+      </div>
+      <div class="cred">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+        <span><b>Más de 20 años</b>Trabajando en el Maresme</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ══ PROTOCOLO ══ -->
+<section>
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="label dk">Protocolo de intervención</span>
+      <h2>Un método fijo, no <em>improvisación</em></h2>
+      <p>Toda avería, por pequeña que sea, pasa por las mismas cuatro fases. Es lo que evita reparaciones a medias y presupuestos que crecen sobre la marcha.</p>
+    </div>
+    <div class="protocol reveal">
+      <div class="pstep">
+        <span class="no">Fase 01</span>
+        <h3>Inspección y localización</h3>
+        <p>Antes de abrir nada, localizamos el origen exacto con equipos de detección: cámara, geófono o gas trazador según el caso.</p>
+      </div>
+      <div class="pstep">
+        <span class="no">Fase 02</span>
+        <h3>Croquis y presupuesto</h3>
+        <p>Le mostramos sobre el croquis dónde está el problema y qué implica repararlo, con el importe desglosado antes de empezar.</p>
+      </div>
+      <div class="pstep">
+        <span class="no">Fase 03</span>
+        <h3>Ejecución con material certificado</h3>
+        <p>Solo instalamos material homologado, con la ficha de cada componente anotada en el parte de trabajo.</p>
+      </div>
+      <div class="pstep">
+        <span class="no">Fase 04</span>
+        <h3>Prueba de presión y cierre</h3>
+        <p>Verificamos la reparación con prueba de presión y le entregamos informe, factura y garantía firmada.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ ENTREGABLES ══ -->
+<section class="deliver">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="label">Lo que queda en su poder</span>
+      <h2>La reparación termina,<br>el <em>respaldo</em> se queda</h2>
+      <p>Cuando cerramos un trabajo, usted conserva tres documentos. Es la diferencia entre una chapuza barata y una instalación defendible ante una comunidad o un seguro.</p>
+    </div>
+    <div class="docs reveal">
+      <div class="doc">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="4" y="3" width="16" height="18" rx="1"/><path d="M8 9h8M8 13h8M8 17h5"/></svg></div>
+        <h3>Informe técnico</h3>
+        <p>Descripción de la avería, causa detectada, actuación realizada y croquis acotado de la instalación intervenida.</p>
+      </div>
+      <div class="doc">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 2h6l1 4H8z"/><rect x="4" y="6" width="16" height="15" rx="1"/><path d="M9 13h6"/></svg></div>
+        <h3>Factura desglosada</h3>
+        <p>Mano de obra, materiales e IVA separados. Válida para reclamar al seguro o repercutir a la comunidad de propietarios.</p>
+      </div>
+      <div class="doc">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2l8 4v6c0 5-3.5 9-8 10-4.5-1-8-5-8-10V6z"/><path d="M9 12l2 2 4-4"/></svg></div>
+        <h3>Garantía firmada</h3>
+        <p>Periodo de garantía por escrito sobre materiales y mano de obra, con el alcance concreto de lo reparado.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ TARIFAS ══ -->
+<section>
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="label dk">Tarifas orientativas</span>
+      <h2>Los números, <em>por delante</em></h2>
+      <p>Precios de referencia en horario diurno. El importe exacto se lo confirmamos por teléfono en cuanto nos describa la avería.</p>
+    </div>
+    <div class="rates reveal">
+      <div class="rate">
+        <div><div class="job">Localización de fuga</div><div class="det">Cámara, geófono o gas trazador</div></div>
+        <div class="fee">desde 90 €</div>
+      </div>
+      <div class="rate">
+        <div><div class="job">Reparación de fuga o rotura</div><div class="det">Grifería, tubería o cisterna</div></div>
+        <div class="fee">desde 65 €</div>
+      </div>
+      <div class="rate">
+        <div><div class="job">Desatasco de tubería</div><div class="det">Cocina, baño o bajante comunitaria</div></div>
+        <div class="fee">desde 70 €</div>
+      </div>
+      <div class="rate">
+        <div><div class="job">Sustitución de calentador</div><div class="det">Incluye retirada del antiguo</div></div>
+        <div class="fee">desde 120 €</div>
+      </div>
+      <div class="rate">
+        <div><div class="job">Reforma de baño o cocina</div><div class="det">Proyecto y presupuesto tras visita técnica</div></div>
+        <div class="fee">a medida</div>
+      </div>
+      <div class="rates-note">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+        <span>El desplazamiento va incluido si realiza la reparación con nosotros. <b>El presupuesto se cierra antes de empezar</b> y solo se revisa si al abrir aparece algo distinto a lo descrito, siempre consultándolo con usted primero.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ BANDA ══ -->
+<div class="band">
+  <div class="wrap">
+    <div>
+      <h3 class="reveal">Cuéntenos la avería y le decimos <em>qué implica</em> repararla.</h3>
+      <p class="reveal">Diagnóstico por teléfono sin compromiso, con el importe orientativo antes de movernos.</p>
+    </div>
+    <a class="btn-call" href="tel:+34936941829">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      <span>
+        <span class="cap">Llamar ahora</span>
+        <span class="num">936 941 829</span>
+      </span>
+    </a>
+  </div>
+</div>
+
+<!-- ══ ZONAS ══ -->
+<section>
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="label dk">Zona de trabajo</span>
+      <h2>Mataró y el <em>Maresme</em></h2>
+    </div>
+    <div class="zones reveal">
+      <span class="zone">Mataró centre</span>
+      <span class="zone">Rocafonda</span>
+      <span class="zone">Cerdanyola</span>
+      <span class="zone">Peramàs</span>
+      <span class="zone">Vista Alegre</span>
+      <span class="zone">Argentona</span>
+      <span class="zone">Vilassar de Mar</span>
+      <span class="zone">Premià de Mar</span>
+      <span class="zone">Cabrera de Mar</span>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FAQ ══ -->
+<section style="padding-top:0;">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="label dk">Preguntas frecuentes</span>
+      <h2>Antes de <em>llamar</em></h2>
+    </div>
+    <div class="reveal">
+      <details class="qa" open>
+        <summary>¿Pueden localizar una fuga sin picar toda la pared?<span class="mk"></span></summary>
+        <p>Sí. Trabajamos con cámara termográfica, geófono y gas trazador para acotar el punto exacto. En la mayoría de casos la apertura se limita a unos centímetros alrededor de la avería.</p>
+      </details>
+      <details class="qa">
+        <summary>¿El informe técnico me sirve para el seguro?<span class="mk"></span></summary>
+        <p>Sí. El informe incluye causa, actuación, croquis y fotografías, que es lo que suelen exigir las aseguradoras y las comunidades de propietarios para tramitar un siniestro.</p>
+      </details>
+      <details class="qa">
+        <summary>¿El presupuesto puede subir una vez empezado el trabajo?<span class="mk"></span></summary>
+        <p>Solo si al abrir aparece algo distinto a lo que se describió, y siempre parándonos a explicárselo y confirmarlo con usted antes de continuar. Nunca se lo encontrará en la factura final.</p>
+      </details>
+      <details class="qa">
+        <summary>¿Trabajan con comunidades de propietarios?<span class="mk"></span></summary>
+        <p>Habitualmente. Atendemos bajantes, montantes y averías comunitarias, con la documentación preparada para presentar en junta o al administrador de fincas.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FOOTER ══ -->
+<footer>
+  <div class="wrap foot">
+    <div>
+      <div class="brand" style="margin-bottom:14px;">
+        <svg class="mk" viewBox="0 0 40 40" aria-hidden="true">
+          <circle cx="20" cy="20" r="18.5" fill="none" stroke="currentColor" stroke-width="1"/>
+          <path d="M20 8c4.6 5.6 7.6 9.6 7.6 13.2a7.6 7.6 0 0 1-15.2 0C12.4 17.6 15.4 13.6 20 8z" fill="none" stroke="currentColor" stroke-width="1.5"/>
+        </svg>
+        Fontanero <em>Mataró</em>
+      </div>
+      <p>Instaladores autorizados en Mataró<br>y la comarca del Maresme.</p>
+    </div>
+    <div>
+      <h4>Contacto</h4>
+      <p><a href="tel:+34936941829">936 941 829</a></p>
+      <p><a href="https://wa.me/34644415819" target="_blank" rel="noopener">WhatsApp 644 415 819</a></p>
+    </div>
+    <div>
+      <h4>Horario</h4>
+      <p>Lunes a sábado, 8:00–20:00</p>
+      <p>Urgencias fuera de horario bajo consulta</p>
+    </div>
+  </div>
+  <div class="wrap"><div class="fine">© 2026 Fontanero Mataró Expertos · Todos los derechos reservados</div></div>
+</footer>
+
+<!-- ══ STICKY ══ -->
+<div class="sticky">
+  <a class="s-call" href="tel:+34936941829">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    Llamar: 936 941 829
+  </a>
+  <a class="s-wa" href="https://wa.me/34644415819" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.28-1.38a9.9 9.9 0 0 0 4.76 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.13-2.9-7C17.18 3.03 14.7 2 12.04 2zm5.8 14.1c-.24.68-1.4 1.3-1.93 1.38-.5.08-1.12.11-1.8-.11a17.2 17.2 0 0 1-1.7-.63c-3-1.3-4.95-4.32-5.1-4.52-.15-.2-1.22-1.62-1.22-3.1 0-1.47.77-2.19 1.05-2.49.27-.3.6-.37.8-.37h.57c.18 0 .43-.07.67.51.24.6.83 2.06.9 2.21.07.15.12.32.02.52-.1.2-.15.32-.3.5-.15.17-.31.39-.44.52-.15.15-.3.31-.13.6.17.3.77 1.27 1.65 2.05 1.14 1.02 2.1 1.33 2.4 1.48.3.15.47.13.65-.08.17-.2.75-.87.95-1.17.2-.3.4-.24.66-.15.27.1 1.72.81 2.02.96.3.15.5.22.57.35.07.13.07.75-.17 1.44z"/></svg>
+  </a>
+</div>
+
+<script>
+  (function(){
+    var els=document.querySelectorAll('.reveal');
+    if(window.matchMedia('(prefers-reduced-motion: reduce)').matches || !('IntersectionObserver' in window)){
+      els.forEach(function(e){e.classList.add('in-view');}); return;
+    }
+    var o=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in-view');o.unobserve(x.target);}});},{threshold:0.1});
+    els.forEach(function(e){o.observe(e);});
+  })();
+</script>
+
+</body>
+</html>
